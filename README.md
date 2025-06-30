@@ -1,7 +1,5 @@
-# Global-Healthcare-Decision-Support-Platform [ ACADEMIC PROJECT2 ]
+# Global-Healthcare-Decision-Support-Platform [ACADEMIC PROJECT2]
 Healthcare-Treatment-Recommendation-System using python
-
-
 
 In today's fast-paced world, the healthcare industry is continuously evolving, driven by the integration of technology and artificial intelligence. Despite these advancements, one major challenge persists — helping individuals make informed decisions about their treatment options without immediate access to a healthcare professional.
 To address this, we present an innovative AI-powered solution: **Healthcare Treatment Recommendation System** — a smart web-based application built using Python and Flask.
@@ -38,5 +36,16 @@ The motivation for this project arises from the global need for **accessible, re
 6. Success rates are visualized using interactive bar charts.
 
 # Output screenshots
+**Homepage**
+https://github.com/Komathy0822/-Global-Healthcare-Decision-Support-Platform/blob/main/Home%20page%20.png?raw=true
+
+**Discussion**
+https://github.com/Komathy0822/-Global-Healthcare-Decision-Support-Platform/blob/main/Dicussion%20.png?raw=true
+
+**Treatement success rate chart**
+https://github.com/Komathy0822/-Global-Healthcare-Decision-Support-Platform/blob/main/Successrate_chart.png?raw=true
+
+**Final treatement Recommendation**
+https://github.com/Komathy0822/-Global-Healthcare-Decision-Support-Platform/blob/main/Final%20treatment%20Recommendation.png?raw=true
 
 
