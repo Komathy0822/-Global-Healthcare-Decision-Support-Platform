@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Healthcare Treatment Discussion</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Fullscreen video background */
+    #bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 25px;
+      color: #ffffff;
+      text-shadow: 0 0 10px #0f0;
+    }
+
+    input[type="text"] {
+      padding: 14px;
+      width: 70%;
+      font-size: 1rem;
+      border-radius: 12px;
+      border: none;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      margin-bottom: 20px;
+      backdrop-filter: blur(5px);
+      outline: none;
+    }
+
+    input::placeholder {
+  color: #000;
+}
+
+
+    button {
+      padding: 12px 30px;
+      font-size: 1rem;
+      background-color: #39ff14;
+      color: #000;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #39ff14, 0 0 30px #39ff14;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+        padding: 25px;
+      }
+
+      input[type="text"] {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="{{ url_for('static', filename='background.mp4') }}" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Transparent Glassmorphism Form Container -->
+  <div class="container">
+    <h1>Healthcare Treatment Discussion Assistant</h1>
+    <form method="POST">
+      <input type="text" name="disease" placeholder="Enter disease name..." required><br>
+      <button type="submit">Start dicussion</button>
+    </form>
+  </div>
+
+</body>
+</html>
